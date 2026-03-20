@@ -1,0 +1,66 @@
+# ── Processed data outputs ────────────────────────────────────────────────
+# Never commit large binary data files or pipeline outputs
+*.h5ad
+*.h5
+*.loom
+*.zarr/
+
+# CSV outputs (regenerable from pipeline)
+processed/
+*_output/
+
+# ── Raw data ───────────────────────────────────────────────────────────────
+# Raw GEO downloads — too large for git
+raw/
+*.mtx
+*.mtx.gz
+*.tsv.gz
+*.barcodes.tsv
+*.features.tsv
+*.genes.tsv
+*.tar
+*.tar.gz
+*.gz
+
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+
+# ── Jupyter / Colab ────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+# Uncomment to also ignore notebook outputs (keeps diffs clean):
+# *.ipynb
+
+# ── Virtual environments ───────────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── OS / editor ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Credentials / secrets ──────────────────────────────────────────────────
+.env
+*.pem
+*.key
+secrets.json
+
+# ── Enrichr / gseapy cache ─────────────────────────────────────────────────
+enrichr_cache/
+gseapy_cache/
+*.enrichr/
